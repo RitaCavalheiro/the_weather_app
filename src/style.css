@@ -1,0 +1,129 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #c1c5cd;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+h3 {
+  margin-top: -10px;
+}
+
+button.search {
+  display: inline;
+  border-radius: 15px;
+  border: 0;
+  padding: 10px 20px;
+  background-color: #ef5f9a;
+  color: #fff;
+}
+
+button.location {
+  display: inline;
+  border-radius: 15px;
+  border: 0;
+  padding: 10px 25px;
+  background-color: #9772f3;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+p.link {
+  font-weight: bold;
+  margin-left: 350px;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.container {
+  margin: 50px auto;
+  margin-bottom: 0;
+  border: 1px solid #c1c5cd;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.row.text-center {
+  padding-left: 50px;
+  padding-right: 0;
+  float: none;
+  margin: auto;
+}
+
+.input_search {
+  display: inline;
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 230px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.search-icon {
+  display: inline;
+  font-size: 30px;
+}
+
+.conditions {
+  margin-top: 0;
+}
+
+#date {
+  margin-top: 20px;
+}
+
+.col-4.date {
+  margin: 15px 20px;
+  text-align: right;
+}
+
+.present-weather {
+  font-size: 100px;
+  text-align: center;
+}
+
+.present-weather {
+  text-align: left;
+  font-size: 90px;
+  margin-top: 0;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: normal;
+  top: -34px;
+  margin-bottom: 0;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.celcius {
+  text-decoration: none;
+  color: #c1c5cd;
+  font-weight: bold;
+}
+.fahrenheit {
+  text-decoration: none;
+  color: #c1c5cd;
+}
+
+.humidity {
+  margin-bottom: 0;
+}
