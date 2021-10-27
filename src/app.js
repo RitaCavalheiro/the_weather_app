@@ -51,6 +51,9 @@ function displayTemperature(response) {
   let city = document.querySelector("#city");
   city.innerHTML = response.data.name;
 
+  let date = document.querySelector("#date");
+  date.innerHTML = formatDate();
+
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
 
@@ -66,11 +69,16 @@ function displayTemperature(response) {
   let windSpeed = document.querySelector("#wind");
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
 
-  let date = document.querySelector("#date");
-  date.innerHTML = formatDate();
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "14a11ca12b8325f528737d829fa8d1b3";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Coimbra&appid=${apiKey}&units=metric`;
+let city = "Coimbra";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
