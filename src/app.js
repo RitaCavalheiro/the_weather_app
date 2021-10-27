@@ -1,3 +1,49 @@
+function formatDate(date) {
+  let currentDate = new Date();
+
+  let days = [
+    "Sun",
+    "Mon",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[currentDate.getDay()];
+
+  let dateDay = currentDate.getDate();
+
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let month = months[currentDate.getMonth()];
+
+  let hours = currentDate.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = currentDate.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  let formattedDate = `${day}, ${dateDay} ${month}, 
+  ${hours}:${minutes}`;
+  return formattedDate;
+}
+
 function displayTemperature(response) {
   let currentTemperature = document.querySelector("#currentTemperature");
   currentTemperature.innerHTML = Math.round(response.data.main.temp);
@@ -19,6 +65,9 @@ function displayTemperature(response) {
 
   let windSpeed = document.querySelector("#wind");
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
+
+  let date = document.querySelector("#date");
+  date.innerHTML = formatDate();
 }
 
 let apiKey = "14a11ca12b8325f528737d829fa8d1b3";
