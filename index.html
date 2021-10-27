@@ -27,12 +27,17 @@
   <body>
     <div class="container">
       <form id="city-seach-form">
-        <div class="row">  
+        <div class="row">
           <div class="col-1 search-icon">
             <i class="fas fa-search"></i>
           </div>
           <div class="col-5 search-box">
-            <input type="search" class="input_search" placeholder="Search City" id="search-text-input" />
+            <input
+              type="search"
+              class="input_search"
+              placeholder="Search City"
+              id="search-text-input"
+            />
           </div>
           <div class="col-2 button">
             <button class="search" id="searchCity">Search</button>
@@ -41,33 +46,26 @@
             <button class="location" id="currentCity">Current City</button>
           </div>
         </div>
-        </form>
+      </form>
       <div class="row">
         <div class="col-4 date">
-          <h1>Coimbra</h1>
-          <p id=date>
-          Monday, 27 sep 
-          <br>Sunny</br>
-          </p>
+          <h1 id="city">Coimbra</h1>
+          <p id="date">Monday, 27 sep</p>
+          <p id="description">Sunny</p>
         </div>
-       
+
         <div class="col-3 conditions">
-            <span class="temperature" id="currentTemperature">17</span>
-            <span class="units">
-              <a href="#" class= "celcius" id="degreesC">ºC</a>
-              <!-- <a href="#" class="fahrenheit" id="degreesF">ºF</a> -->
-            </span>
-         
-          <h3>
-            <span id="max">24</span>º/<span id="min">13</span>º
-          </h3>
-          <p class="humidity">
-          Humidity: <span id="humidity">10</span>% 
-          </p>
-          <p>
-          Wind:<span id="wind"></span> 5</span>km/h
-          
+          <span class="temperature" id="currentTemperature">17</span>
+          <span class="units">
+            <a href="#" class="celcius" id="degreesC">ºC</a>
+            <!-- <a href="#" class="fahrenheit" id="degreesF">ºF</a> -->
+          </span>
+
+          <h3><span id="max">24</span>º/<span id="min">13</span>º</h3>
+          <p class="humidity">Humidity: <span id="humidity">10</span>%</p>
+          <p>Wind: <span id="wind">5</span>km/h</p>
         </div>
+
         <div class="col-4 present-weather">🌤</div>
       </div>
       <div class="row text-center">
@@ -106,10 +104,12 @@
             <li>12ºC</li>
           </ul>
         </div>
-      </div> 
+      </div>
     </div>
-    <p class="link"> <a href="https://github.com/RitaCavalheiro/Cool-app">Open-source code</a> by Rita Cavalheiro</p>
-    <script src="src/script.js"></script>
+    <p class="link">
+      <a href="https://github.com/RitaCavalheiro/Cool-app">Open-source code</a>
+      by Rita Cavalheiro
+    </p>
+    <script src="src/app.js"></script>
   </body>
 </html>
-

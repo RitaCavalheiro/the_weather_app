@@ -86,6 +86,11 @@ p.link {
   margin-top: 20px;
 }
 
+#description {
+  margin-top: -15px;
+  text-transform: capitalize;
+}
+
 .col-4.date {
   margin: 15px 20px;
   text-align: right;
