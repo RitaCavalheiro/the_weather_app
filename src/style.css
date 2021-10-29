@@ -35,16 +35,21 @@ button.location {
   color: #fff;
 }
 
-button:hover {
-  opacity: 0.7;
-  cursor: pointer;
-}
-
 p.link {
   font-weight: bold;
   margin-left: 350px;
   margin-top: 10px;
   font-weight: lighter;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ef5f9a;
+  cursor: default;
 }
 
 .container {
@@ -82,15 +87,6 @@ p.link {
   margin-top: 0;
 }
 
-#date {
-  margin-top: 30px;
-}
-
-#description {
-  margin-top: -15px;
-  text-transform: capitalize;
-}
-
 .col-4.date {
   margin: 15px 20px;
   text-align: right;
@@ -119,16 +115,28 @@ p.link {
   top: -34px;
 }
 
-.celcius {
-  text-decoration: none;
-  color: #c1c5cd;
+.humidity {
+  margin-bottom: 0;
+}
+
+.active {
   font-weight: bold;
 }
-.fahrenheit {
+
+#degreesC {
+  text-decoration: none;
+  color: #c1c5cd;
+}
+#degreesF {
   text-decoration: none;
   color: #c1c5cd;
 }
 
-.humidity {
-  margin-bottom: 0;
+#date {
+  margin-top: 30px;
+}
+
+#description {
+  margin-top: -15px;
+  text-transform: capitalize;
 }

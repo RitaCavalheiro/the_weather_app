@@ -45,8 +45,10 @@ function formatDate(date) {
 }
 
 function displayTemperature(response) {
+  celciusTemp = response.data.main.temp;
+
   let currentTemperature = document.querySelector("#currentTemperature");
-  currentTemperature.innerHTML = Math.round(response.data.main.temp);
+  currentTemperature.innerHTML = Math.round(celciusTemp);
 
   let city = document.querySelector("#city");
   city.innerHTML = response.data.name;
@@ -90,5 +92,32 @@ function handleSubmit(event) {
   search(searchInput.value);
 }
 
+function displayFahrenheitTemp(event) {
+  event.preventDefault();
+  celciusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let currentTemperature = document.querySelector("#currentTemperature");
+  let FahrenheitTemp = (celciusTemp * 9) / 5 + 32;
+  currentTemperature.innerHTML = Math.round(FahrenheitTemp);
+}
+
+function displayCelciusTemp(event) {
+  event.preventDefault();
+  celciusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let currentTemperature = document.querySelector("#currentTemperature");
+  currentTemperature.innerHTML = Math.round(celciusTemp);
+}
+
+let celciusTemp = null;
+
 let form = document.querySelector("#city-seach-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#degreesF");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
+
+let celciusLink = document.querySelector("#degreesC");
+celciusLink.addEventListener("click", displayCelciusTemp);
+
+search("Coimbra");
