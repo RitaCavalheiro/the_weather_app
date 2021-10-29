@@ -35,11 +35,15 @@ button.location {
   color: #fff;
 }
 
-p.link {
-  font-weight: bold;
+p.gitLink {
   margin-left: 350px;
   margin-top: 10px;
   font-weight: lighter;
+}
+
+a.gitLink {
+  color: #9772f3;
+  text-decoration: none;
 }
 
 button:hover {
