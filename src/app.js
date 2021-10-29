@@ -79,12 +79,12 @@ function displayTemperature(response) {
   icon.setAttribute("alt", response.data.weather[0].description);
 }
 
-function search(city) {
-  let apiKey = "14a11ca12b8325f528737d829fa8d1b3";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+// function search(city) {
+//   let apiKey = "14a11ca12b8325f528737d829fa8d1b3";
+//   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
-  axios.get(apiUrl).then(displayTemperature);
-}
+//   axios.get(apiUrl).then(displayTemperature);
+// }
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -109,6 +109,24 @@ function displayCelciusTemp(event) {
   currentTemperature.innerHTML = Math.round(celciusTemp);
 }
 
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apiKey = "14a11ca12b8325f528737d829fa8d1b3";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=${units}&appid=${apiKey}`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let buttonLocation = document.querySelector("#currentCity");
+buttonLocation.addEventListener("click", getCurrentLocation);
+
 let celciusTemp = null;
 
 let form = document.querySelector("#city-seach-form");
@@ -120,4 +138,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 let celciusLink = document.querySelector("#degreesC");
 celciusLink.addEventListener("click", displayCelciusTemp);
 
-search("Coimbra");
+// search("Coimbra");
