@@ -44,6 +44,31 @@ function formatDate(date) {
   return formattedDate;
 }
 
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row text-center">`;
+  let days = ["wed", "thu", "fri", "sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2 weather-forecast-temperature">
+                <h4 class="weather-forecast-date">
+                  ${day}, 28
+                  <span>🌤</span>
+                </h4>
+                <ul>
+                  <li class="weather-forecast-temperature-max">22ºC</li>
+                  <li class="weather-forecast-temperature-min">9ºC</li>
+                </ul>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecast.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   celciusTemp = response.data.main.temp;
 
@@ -139,3 +164,4 @@ let celciusLink = document.querySelector("#degreesC");
 celciusLink.addEventListener("click", displayCelciusTemp);
 
 search("Coimbra");
+displayForecast();
