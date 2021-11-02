@@ -71,7 +71,7 @@ function displayTemperature(response) {
   let windSpeed = document.querySelector("#wind");
   windSpeed.innerHTML = Math.round(response.data.wind.speed);
 
-  let icon = document.querySelector("#icon");
+  let icon = document.querySelector("#icon_main_temp");
   icon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
