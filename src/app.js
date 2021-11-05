@@ -2,8 +2,8 @@ function formatDate(date) {
   let currentDate = new Date();
 
   let days = [
-    "Sun",
-    "Mon",
+    "Sunday",
+    "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
@@ -39,34 +39,63 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  let formattedDate = `${day}, ${dateDay} ${month}, 
-  ${hours}:${minutes}`;
+  let formattedDate = `${day},<p class="day">${dateDay} ${month},</p><p> 
+  ${hours}:${minutes}</p>`;
   return formattedDate;
 }
 
-function displayForecast() {
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let dateDay = date.getDate();
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forcastDay = `${days[day]}, ${dateDay}`;
+  return forcastDay;
+  // return days[day];
+}
+
+function displayForecast(response) {
+  let apiForecast = response.data.daily;
   let forecast = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row text-center">`;
   let days = ["wed", "thu", "fri", "sat"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
-              <div class="col-2 weather-forecast-temperature">
-                <h4 class="weather-forecast-date">
-                  ${day}, 28
-                  <span>🌤</span>
-                </h4>
-                <ul>
-                  <li class="weather-forecast-temperature-max">22ºC</li>
-                  <li class="weather-forecast-temperature-min">9ºC</li>
-                </ul>
-          </div>`;
+  apiForecast.forEach(function (apiForcastDay, index) {
+    if (index > 0 && index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
+                <div class="col-2 weather-forecast-temperature">
+                  <h4 class="weather-forecast-date">
+                    ${formatDay(apiForcastDay.dt)}
+                    <span><img src="http://openweathermap.org/img/wn/${
+                      apiForcastDay.weather[0].icon
+                    }@2x.png" alt="" id="icon_forecast_temp" width="42"/> </span>
+                  </h4>
+                  <ul>
+                    <li class="weather-forecast-temperature-max">${Math.round(
+                      apiForcastDay.temp.max
+                    )}º</li>
+                    <li class="weather-forecast-temperature-min">${Math.round(
+                      apiForcastDay.temp.min
+                    )}º</li>
+                  </ul>
+            </div>`;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
   forecast.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "14a11ca12b8325f528737d829fa8d1b3";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -102,6 +131,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   icon.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -164,4 +195,3 @@ let celciusLink = document.querySelector("#degreesC");
 celciusLink.addEventListener("click", displayCelciusTemp);
 
 search("Coimbra");
-displayForecast();
