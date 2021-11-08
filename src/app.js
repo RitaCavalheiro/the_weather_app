@@ -40,8 +40,12 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  let formattedDate = `${day}, ${dateDay} ${month}<p class="hour"> 
-  Last updated at: ${hours}:${minutes}</p>`;
+  let formattedDate = `<div class="row"> <div class="col-6">
+          <p id="date">${day}, ${dateDay} ${month}</p>
+          </div>
+          <div class="col-6 hour"><p> 
+          Last updated at: ${hours}:${minutes}</p></div>
+      </div></div>`;
   return formattedDate;
 }
 
@@ -118,9 +122,9 @@ function displayForecast(response) {
         forecastHTML +
         `
                 <div class="col-2 weather-forecast-temperature">
-                  <h5 class="weather-forecast-date">
+                  <h6 class="weather-forecast-date">
                     ${formatDay(apiForcastDay.dt)}
-                  </h5>
+                  </h6>
                   <ul>
                     <li><img src="icons/${
                       apiForcastDay.weather[0].icon
@@ -183,6 +187,8 @@ function displayTemperature(response) {
   icon.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
+
+  backgroundChange();
 }
 
 // Search bar function
@@ -245,32 +251,123 @@ function getCurrentLocation(event) {
 let buttonLocation = document.querySelector("#currentCity");
 buttonLocation.addEventListener("click", getCurrentLocation);
 
-// function background(response) {
-//   let weatherId = response.data.weather[0].icon;
-//   let backgroundColor = document.querySelector("body");
-//   let mainContainerColor = document.querySelector(".main_container");
-//   let containor = document.querySelector(".container");
-//   if (
-//     // (weatherId = "01n") ||
-//     // (weatherId = "02n") ||
-//     (weatherId = "03n")
-//     // (weatherId = "04n") ||
-//     // (weatherId = "09n") ||
-//     // (weatherId = "10n") ||
-//     // (weatherId = "11n") ||
-//     // (weatherId = "13n") ||
-//     // (weatherId = "50n")
-//   ) {
-//     backgroundColor.style.background =
-//       "linear-gradient(89.4deg, rgb(74, 77, 103) -4.3%, rgb(119, 125, 165) 102.1%)";
-//     mainContainerColor.style.background = "#385170";
-//   }
-// }
-// Unit Conversion
-// let celciusTemp = null;
+// Change backgroung colors function
 
-// let form = document.querySelector("#city-seach-form");
-// form.addEventListener("submit", handleSubmit);
+function backgroundChange(response) {
+  let icon = response.data.weather[0].icon;
+  let mainContainer = document.querySelector(".main_container");
+  let containor = document.querySelector(".container");
+  let description = document.querySelector("#description");
+  let search = document.querySelector(".input_search");
+  //clear sky
+  if (icon === "01d") {
+    document.body.style.background = `radial-gradient(rgb(194, 231, 253) 0%, rgb(241, 249, 255) 97%)`;
+    containor.style.background = `#C2E7FD`;
+    mainContainer.style.background = `#C2E7FD`;
+    search.style.background = `#C2E7FD`;
+  } else if (icon === "01n") {
+    document.body.style.background = `radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  )`;
+    containor.style.background = `#d7dffc`;
+    mainContainer.style.background = `#d7dffc`;
+    search.style.background = `#d7dffc`;
+
+    //few clouds
+  } else if (icon === "02d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "02n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //scattered clouds
+  } else if (icon === "03d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "03n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //broken clouds
+  } else if (icon === "04d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "04n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //shower rain
+  } else if (icon === "09d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "09n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //rain
+  } else if (icon === "10d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "10n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //thunderstorm
+  } else if (icon === "11d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "11n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //snow
+  } else if (icon === "13d") {
+    document.body.style.background = `linear-gradient(to top, #accbee 0%, #e7f0fd 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "13n") {
+    document.body.style.background = `linear-gradient(#00d4ff, #cfed00)`;
+    ontainor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+
+    //mist
+  } else if (icon === "50d") {
+    document.body.style.background = `linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%)`;
+    ontainor.style.background = `#c4c5c7`;
+    mainContainer.style.background = `#c4c5c7`;
+    search.style.background = `#c4c5c7`;
+  } else if (icon === "50n") {
+    document.body.style.background = `linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%)`;
+    ontainor.style.background = `#4C4F6A`;
+    mainContainer.style.background = `#4C4F6A`;
+  }
+}
+
+//Unit Conversion
+// let celciusTemp = null;
 
 // let fahrenheitLink = document.querySelector("#degreesF");
 // fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
@@ -279,4 +376,6 @@ buttonLocation.addEventListener("click", getCurrentLocation);
 // celciusLink.addEventListener("click", displayCelciusTemp);
 
 // Default city search
+let form = document.querySelector("#city-seach-form");
+form.addEventListener("submit", handleSubmit);
 search("Coimbra");

@@ -24,20 +24,21 @@ h3 {
 }
 
 button.search {
-  display: inline;
+  display: relative;
   border-radius: 15px;
   border: 0;
-  padding: 10px 30px;
-  margin-left: 30px;
+  padding: 10px 25px;
+  margin-left: 20px;
   background-color: #ef5f9a;
   color: #fff;
 }
 
 button.location {
-  display: inline;
+  display: relative;
   border-radius: 15px;
   border: 0;
-  padding: 10px 30px;
+  padding: 10px 25px;
+  margin-right: 10px;
   background-color: #9772f3;
   color: #fff;
 }
@@ -83,7 +84,7 @@ input::placeholder {
   border-radius: 15px;
   box-shadow: 10px 10px 23px rgba(5, 5, 255, 0.2);
   padding: 30px;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .row.text-center {
@@ -96,7 +97,7 @@ input::placeholder {
   display: inline;
   padding: 5px;
   margin-bottom: 15px;
-  width: 250px;
+  width: 200px;
   border-radius: 50px;
   border-style: solid;
   border-width: 1px;
@@ -116,9 +117,10 @@ input::placeholder {
 }
 
 .temperature {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: normal;
-  margin-bottom: 0;
+  margin-top: -50px;
+  text-align: right;
 }
 
 .active {
@@ -127,7 +129,7 @@ input::placeholder {
 
 .units {
   position: relative;
-  top: -34px;
+  top: -45px;
 }
 
 .humidity {
@@ -141,7 +143,19 @@ input::placeholder {
 }
 
 .present-weather {
-  text-align: left;
+  position: relative;
+  left: 0;
+}
+
+.hour {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.dh {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .container {
@@ -158,6 +172,8 @@ input::placeholder {
 #degreesC {
   text-decoration: none;
   color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #degreesF {
   text-decoration: none;
@@ -165,7 +181,8 @@ input::placeholder {
 }
 
 #date {
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -176,7 +193,8 @@ input::placeholder {
 }
 
 #icon_main_temp {
-  text-align: right;
-  width: 170px;
+  text-align: left;
+  width: 150px;
   margin-top: 40px;
+  padding: 0;
 }
