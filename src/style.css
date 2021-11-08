@@ -1,6 +1,12 @@
 body {
   font-family: "Quicksand", sans-serif;
-  color: #c1c5cd;
+  color: #fff;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  );
 }
 
 ul {
@@ -14,14 +20,15 @@ li {
 }
 
 h3 {
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 button.search {
   display: inline;
   border-radius: 15px;
   border: 0;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  margin-left: 30px;
   background-color: #ef5f9a;
   color: #fff;
 }
@@ -30,7 +37,7 @@ button.location {
   display: inline;
   border-radius: 15px;
   border: 0;
-  padding: 10px 25px;
+  padding: 10px 30px;
   background-color: #9772f3;
   color: #fff;
 }
@@ -40,13 +47,18 @@ p.day {
 }
 
 p.gitLink {
-  margin-left: 350px;
   margin-top: 10px;
+  text-align: center;
   font-weight: lighter;
 }
 
 a.gitLink {
   color: #9772f3;
+  text-decoration: none;
+}
+
+a.linkedin {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -60,17 +72,21 @@ a:hover {
   cursor: default;
 }
 
-.container {
+input::placeholder {
+  color: #fff;
+}
+
+.main_container {
   margin: 50px auto;
-  margin-bottom: 0;
-  border: 1px solid #c1c5cd;
+  margin-bottom: 50px;
+  background: #d7dffc;
   border-radius: 15px;
-  padding: 20px;
-  max-width: 600px;
+  box-shadow: 10px 10px 23px rgba(5, 5, 255, 0.2);
+  padding: 30px;
+  max-width: 500px;
 }
 
 .row.text-center {
-  padding-left: 50px;
   padding-right: 0;
   float: none;
   margin: auto;
@@ -80,10 +96,13 @@ a:hover {
   display: inline;
   padding: 5px;
   margin-bottom: 15px;
-  width: 230px;
+  width: 250px;
   border-radius: 50px;
   border-style: solid;
   border-width: 1px;
+  background: #d7dffc;
+  color: #fff;
+  border-color: #fff;
 }
 
 .search-icon {
@@ -91,31 +110,19 @@ a:hover {
   font-size: 30px;
 }
 
-.conditions {
-  margin-top: 0;
-}
-
 .col-4.date {
   margin: 15px 20px;
-  text-align: right;
-}
-
-.present-weather {
-  font-size: 100px;
-  text-align: center;
-}
-
-.present-weather {
   text-align: left;
-  font-size: 90px;
-  margin-top: 0;
 }
 
 .temperature {
   font-size: 60px;
   font-weight: normal;
-  top: -34px;
   margin-bottom: 0;
+}
+
+.active {
+  font-weight: bold;
 }
 
 .units {
@@ -127,24 +134,49 @@ a:hover {
   margin-bottom: 0;
 }
 
-.active {
-  font-weight: bold;
+.temps {
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.present-weather {
+  text-align: left;
+}
+
+.container {
+  margin: 50px auto;
+  margin-bottom: 0;
+  background: #d7dffc;
+  border-radius: 15px;
+  box-shadow: 10px 10px 23px rgba(5, 5, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 550px;
 }
 
 #degreesC {
   text-decoration: none;
-  color: #c1c5cd;
+  color: #fff;
 }
 #degreesF {
   text-decoration: none;
-  color: #c1c5cd;
+  color: #fff;
 }
 
 #date {
-  margin-top: 30px;
+  margin-top: 0;
+  text-align: left;
 }
 
 #description {
-  margin-top: -15px;
+  margin-bottom: 50px;
   text-transform: capitalize;
+  font-weight: bold;
+}
+
+#icon_main_temp {
+  text-align: right;
+  width: 170px;
+  margin-top: 40px;
 }

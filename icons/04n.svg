@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2020 1667" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-2962,-6397)">
+        <g id="Prancheta8" transform="matrix(1,0,0,1,156,-0.566929)">
+            <rect x="2806" y="6397.57" width="2020" height="1666.87" style="fill:none;"/>
+            <g id="broken-clouds-night" serif:id="broken clouds night" transform="matrix(1,0,0,1,2566.21,-362.433)">
+                <g transform="matrix(1.41292,0,0,1.41292,-266.732,2691.34)">
+                    <path d="M681,3769C792.068,3767.86 1496.06,3785.26 1563,3769C1682.66,3739.93 1720.6,3422.02 1459,3454C1441.37,3456.16 1491.66,3337.47 1430.84,3289.53C1364.72,3237.43 1271.27,3259.68 1223,3298C1214.3,3304.91 1226.09,3047.36 963.045,3080.24C744.434,3107.57 791.051,3319.37 770,3360C768.738,3362.44 558.14,3334.91 539.411,3551.23C530.515,3653.97 595.606,3769.87 681,3769Z" style="fill:rgb(211,211,211);"/>
+                </g>
+                <g transform="matrix(1.41292,0,0,1.41292,-416.732,2809.84)">
+                    <path d="M681,3769C792.068,3767.86 1496.06,3785.26 1563,3769C1682.66,3739.93 1720.6,3422.02 1459,3454C1441.37,3456.16 1491.66,3337.47 1430.84,3289.53C1364.72,3237.43 1271.27,3259.68 1223,3298C1214.3,3304.91 1226.09,3047.36 963.045,3080.24C744.434,3107.57 791.051,3319.37 770,3360C768.738,3362.44 558.14,3334.91 539.411,3551.23C530.515,3653.97 595.606,3769.87 681,3769Z" style="fill:rgb(240,240,240);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

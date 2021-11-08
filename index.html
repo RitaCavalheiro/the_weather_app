@@ -25,13 +25,11 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container">
+    <div class="main_container">
       <form id="city-seach-form">
         <div class="row">
-          <div class="col-1 search-icon">
-            <i class="fas fa-search"></i>
-          </div>
-          <div class="col-5 search-box">
+          
+          <div class="col-6 search-box">
             <input
               type="search"
               class="input_search"
@@ -39,47 +37,52 @@
               id="search-text-input"
             />
           </div>
-          <div class="col-2 button">
-            <button class="search" id="searchCity">Search</button>
+          <div class="col-3 button">
+            <button class="search" id="searchCity"><i class="fas fa-search"></i></button>
           </div>
-          <div class="col-4 button">
-            <button class="location" id="currentCity">Current City</button>
+          <div class="col-3 button">
+            <button class="location" id="currentCity"><i class="fas fa-search-location"></i>
+</button>
           </div>
         </div>
       </form>
       <div class="row">
-        <div class="col-4 date">
+        <div class="col-4 conditions">
           <h1 id="city">Coimbra</h1>
-          <p class="day" id="date">Monday, 27 sep</p>
           <p id="description">Sunny</p>
-        </div>
-
-        <div class="col-3 conditions">
-          <span class="temperature" id="currentTemperature">17</span>
-          <span class="units">
-            <a href="#" class="active" id="degreesC">ºC</a>
-            <a href="#" id="degreesF">ºF</a>
+            <p class="humidity">Humidity: <span id="humidity">10</span>%</p>
+            <p>Wind: <span id="wind">5</span>km/h</p>
           </span>
-
-          <h3><span id="max">24</span>º/<span id="min">13</span>º</h3>
-          <p class="humidity">Humidity: <span id="humidity">10</span>%</p>
-          <p>Wind: <span id="wind">5</span>km/h</p>
         </div>
-
         <div class="col-4 present-weather">
           <img src="" alt="" id="icon_main_temp" />
         </div>
-      </div>
-      <div class="weather-forecast" id="forecast">
+        <div class="col-4 temps">
+          <span class="temperature" id="currentTemperature">17</span>
+          <span class="units">
+            <a href="#" class="active" id="degreesC">ºC</a>
+            <!-- <a href="#" id="degreesF">ºF</a> -->
 
+            <h3><span id="max">24</span>º/<span id="min">13</span>º</h3>
         </div>
       </div>
+      
+      <div class="row">
+        <div class="col-6 date">
+          <p id="date">Monday, 27 sep</p>
+      </div>
+      <div id="hourly_forecast"></div>
     </div>
+
+    <div class="container">
+      <div class="weather-forecast" id="forecast"></div>
+    </div>
+
     <p class="gitLink">
       <a href="https://github.com/RitaCavalheiro/Cool-app" class="gitLink"
         >Open-source code</a
       >
-      by Rita Cavalheiro
+      by <a href="https://www.linkedin.com/in/rita-cavalheiro-830120104/" class="linkedin"> Rita Cavalheiro</a>
     </p>
     <script src="src/app.js"></script>
   </body>

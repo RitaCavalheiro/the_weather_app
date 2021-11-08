@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4006 3344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-832.16,555)">
+        <g id="few-clouds-day" serif:id="few clouds day">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-1049.72,9959.72)">
+        <g id="broken-clouds-night" serif:id="broken clouds night">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-832.16,846.275)">
+        <g id="few-clouds-night" serif:id="few clouds night">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-1323.53,9400)">
+        <g id="broken-clouds-day" serif:id="broken clouds day">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-1323.53,14108)">
+        <g id="shower-rain-day" serif:id="shower rain day">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-1323.53,19235.7)">
+        <g id="rain-night" serif:id="rain night">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-1113.77,14901.5)">
+        <g id="shower-rain-night" serif:id="shower rain night">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-1113.77,19961.3)">
+        <g id="rain-night1" serif:id="rain night">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-751,-345)">
+        <g id="snow-day" serif:id="snow day">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-751,-345)">
+        <g transform="matrix(1,0,0,1,6852,21735.3)">
+            <g id="thunder-night" serif:id="thunder night">
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-744,8183.09)">
+        <g transform="matrix(1,0,0,1,1506.5,24264.6)">
+            <g id="mist-night" serif:id="mist night">
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-941.448,4307.05)">
+        <g id="snow-night" serif:id="snow night">
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-752,-2595)">
+        <g transform="matrix(1,0,0,1,2531.23,23430.1)">
+            <g id="thunder-day" serif:id="thunder day">
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-752,6011.23)">
+        <g transform="matrix(1,0,0,1,-2635,25875.7)">
+            <g id="mist-day" serif:id="mist day">
+            </g>
+        </g>
+    </g>
+    <g id="Prancheta1" transform="matrix(1,0,0,1.07145,-751.305,-608.584)">
+        <rect x="751.305" y="568" width="4005.7" height="3121" style="fill:none;"/>
+        <g transform="matrix(1,0,0,0.933313,290.466,607.666)">
+            <g transform="matrix(1,0,0,1,-2787.11,-7549)">
+                <g>
+                    <path d="M4199,9651C4184.59,9644.51 4203.8,9702.9 4190.71,9721.04C4040.49,9929.27 3633.73,10421.3 4082,10631C4263.6,10716 4834.27,10730.2 4966.53,10584C5153.2,10377.6 4918.65,9926.45 4791.06,9723.31C4779.44,9704.8 4784.9,9662.06 4769,9656.82C4673.88,9625.47 4330.38,9710.21 4199,9651Z" style="fill:rgb(253,211,81);stroke:rgb(253,211,81);stroke-width:12.5px;"/>
+                    <g>
+                        <path d="M4821,9698C4760.39,9831.48 5053.82,10348.6 5155,10336C5226.16,10327.1 5234.25,10049.5 5180,9945C5114,9817.83 4847.64,9639.33 4821,9698Z" style="fill:rgb(253,211,81);stroke:rgb(246,203,86);stroke-width:12.5px;"/>
+                        <path d="M4966.53,9881C5030.69,9918.67 5095.85,9902.33 5127,9884" style="fill:rgb(253,211,81);stroke:rgb(246,203,86);stroke-width:12.5px;"/>
+                        <g transform="matrix(0.998995,-0.0448212,0.0448212,0.998995,-366.828,414.144)">
+                            <path d="M4966.53,9881C5030.69,9918.67 5095.85,9902.33 5127,9884" style="fill:rgb(253,211,81);stroke:rgb(246,203,86);stroke-width:12.5px;"/>
+                        </g>
+                        <g transform="matrix(-1,0,0,1,8964.18,-0.949229)">
+                            <path d="M4821,9698C4760.39,9831.48 5053.82,10348.6 5155,10336C5226.16,10327.1 5234.25,10049.5 5180,9945C5114,9817.83 4847.64,9639.33 4821,9698Z" style="fill:rgb(253,211,81);stroke:rgb(246,203,86);stroke-width:12.5px;"/>
+                        </g>
+                        <g transform="matrix(-1,0,0,1,8964.18,-0.949229)">
+                            <path d="M4966.53,9881C5030.69,9918.67 5095.85,9902.33 5127,9884" style="fill:rgb(253,211,81);stroke:rgb(246,203,86);stroke-width:12.5px;"/>
+                        </g>
+                        <g transform="matrix(-0.998995,-0.0448212,-0.0448212,0.998995,9331.01,413.194)">
+                            <path d="M4966.53,9881C5030.69,9918.67 5095.85,9902.33 5127,9884" style="fill:rgb(253,211,81);stroke:rgb(246,203,86);stroke-width:12.5px;"/>
+                        </g>
+                    </g>
+                    <path d="M4744,10546C4736.14,10511.5 4774,10440.8 4804.84,10451C4835.67,10461.2 4905.64,10633.7 4929,10607C4952.36,10580.3 4898.86,10230.4 4950,10276C5001.47,10321.9 5139.38,10351.5 5215.35,10312C5250.81,10293.6 5241.37,10393.2 5288.09,10432.4C5343.59,10479 5461.43,10479.6 5427,10511C5366.52,10566.1 5026.86,10710.5 4948,10752C4908.94,10772.6 4891.07,10684.4 4860,10653C4826,10618.7 4751.86,10580.5 4744,10546Z" style="fill:rgb(237,129,38);stroke:rgb(237,129,38);stroke-width:12.5px;"/>
+                    <g transform="matrix(-1,0,0,1,8825.75,0)">
+                        <path d="M4744,10546C4736.14,10511.5 4774,10440.8 4804.84,10451C4835.67,10461.2 4905.64,10633.7 4929,10607C4952.36,10580.3 4898.86,10230.4 4950,10276C5001.47,10321.9 5139.38,10351.5 5215.35,10312C5250.81,10293.6 5241.37,10393.2 5288.09,10432.4C5343.59,10479 5461.43,10479.6 5427,10511C5366.52,10566.1 5026.86,10710.5 4948,10752C4908.94,10772.6 4891.07,10684.4 4860,10653C4826,10618.7 4751.86,10580.5 4744,10546Z" style="fill:rgb(237,129,38);stroke:rgb(237,129,38);stroke-width:12.5px;"/>
+                    </g>
+                    <path d="M4224,8564C4290.1,8547.29 4158.73,8385.44 4243,8350C4356.66,8302.2 4348.27,8468.06 4370,8473C4383.28,8476.02 4612.35,8238.92 4766,8354C4881.8,8440.73 4719.54,8486.38 4637.25,8485.66C4606.23,8485.39 4602.91,8515.66 4618,8519C5080.92,8621.36 5004.24,9119.51 5007.59,9151.15C5008.03,9155.29 5014.49,9161.06 5018,9166C5174.47,9386.57 5099.36,9616.92 4794,9646C4637.43,9660.91 4360.09,9658.21 4199,9651C3924.67,9638.73 3780.04,9442.44 3939.66,9192C3941.65,9188.87 3946.34,9186.19 3945.68,9182.39C3895.7,8892.43 4067.45,8603.58 4224,8564Z" style="fill:rgb(253,211,81);stroke:rgb(253,211,81);stroke-width:12.5px;"/>
+                    <g>
+                        <path d="M4150.89,9333C4169.56,9448 4341.99,9463.83 4436.76,9465C4531.54,9466.17 4704.76,9444.67 4722.64,9330" style="fill:none;stroke:rgb(255,116,0);stroke-width:12.5px;"/>
+                        <path d="M4398,9157C4365.17,9175.67 4323.67,9255 4283,9282C4244.26,9307.72 4166.89,9283.22 4154,9319C4122.26,9407.1 4341.67,9459.17 4435,9460C4528.33,9460.83 4743.5,9409.67 4721,9323C4711.55,9286.58 4628.2,9304.46 4591,9278C4552.33,9250.5 4513.17,9179.17 4482,9159C4458.48,9143.78 4422.35,9143.16 4398,9157Z" style="fill:rgb(237,129,38);stroke:rgb(237,129,38);stroke-width:12.5px;"/>
+                        <g transform="matrix(0.681422,0.226723,-0.298567,0.89735,4154.14,-40.9199)">
+                            <ellipse cx="4379.5" cy="9230.5" rx="10.5" ry="22.5" style="fill:rgb(147,44,10);"/>
+                        </g>
+                        <g transform="matrix(-0.681422,0.226723,0.298567,0.89735,4716.86,-40.9199)">
+                            <ellipse cx="4379.5" cy="9230.5" rx="10.5" ry="22.5" style="fill:rgb(147,44,10);"/>
+                        </g>
+                        <g transform="matrix(1,0,0,1,-15,0)">
+                            <ellipse cx="4250.5" cy="9115" rx="33.5" ry="65" style="stroke:black;stroke-width:12.5px;"/>
+                        </g>
+                        <g transform="matrix(1,0,0,1,395,0)">
+                            <ellipse cx="4250.5" cy="9115" rx="33.5" ry="65" style="stroke:black;stroke-width:12.5px;"/>
+                        </g>
+                    </g>
+                    <g transform="matrix(1.17478,0,0,1.17478,-760.751,-1571.21)">
+                        <circle cx="4257.57" cy="9096.32" r="106.68" style="fill:rgb(53,42,33);stroke:black;stroke-width:10.64px;"/>
+                    </g>
+                    <g transform="matrix(1.17478,0,0,1.17478,-360.043,-1571.21)">
+                        <circle cx="4257.57" cy="9096.32" r="106.68" style="fill:rgb(53,42,33);stroke:black;stroke-width:10.64px;"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,0,14)">
+                        <path d="M4516.34,9098.98C4516.34,9090.16 4509.18,9083 4500.36,9083L4382.27,9083C4373.44,9083 4366.28,9090.16 4366.28,9098.98C4366.28,9107.8 4373.44,9114.97 4382.27,9114.97L4500.36,9114.97C4509.18,9114.97 4516.34,9107.8 4516.34,9098.98Z" style="fill:rgb(1,1,1);stroke:black;stroke-width:12.5px;"/>
+                    </g>
+                </g>
+            </g>
+            <g id="clear-sky-day" serif:id="clear sky day" transform="matrix(1,0,0,1,2109.09,-525.538)">
+                <circle cx="1133" cy="1299" r="596" style="fill:rgb(252,208,83);"/>
+            </g>
+        </g>
+    </g>
+</svg>
