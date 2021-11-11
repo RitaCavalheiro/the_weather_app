@@ -82,7 +82,7 @@ input::placeholder {
   margin-bottom: 50px;
   background: #d7dffc;
   border-radius: 15px;
-  box-shadow: 10px 10px 23px rgba(5, 5, 255, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 43, 113, 0.2);
   padding: 30px;
   max-width: 450px;
 }
@@ -159,7 +159,7 @@ input::placeholder {
   margin-bottom: 0;
   background: #d7dffc;
   border-radius: 15px;
-  box-shadow: 10px 10px 23px rgba(5, 5, 255, 0.2);
+  box-shadow: 10px 10px 20px rgba(0, 43, 113, 0.2);
   border-radius: 15px;
   padding: 20px;
   max-width: 550px;

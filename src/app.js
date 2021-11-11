@@ -188,7 +188,7 @@ function displayTemperature(response) {
 
   getForecast(response.data.coord);
 
-  backgroundChange();
+  backgroundChange(response);
 }
 
 // Search bar function
@@ -225,6 +225,115 @@ function getCurrentLocation(event) {
 
 let buttonLocation = document.querySelector("#currentCity");
 buttonLocation.addEventListener("click", getCurrentLocation);
+
+// Change backgroung colors function
+
+function backgroundChange(response) {
+  let icon = response.data.weather[0].icon;
+  let mainContainer = document.querySelector(".main_container");
+  let containor = document.querySelector(".container");
+  let search = document.querySelector(".input_search");
+  //clear sky
+  if (icon === "01d") {
+    document.body.style.background = `radial-gradient(rgb(194, 231, 253) 0%, rgb(241, 249, 255) 97%)`;
+    containor.style.background = `#C2E7FD`;
+    mainContainer.style.background = `#C2E7FD`;
+    search.style.background = `#C2E7FD`;
+  } else if (icon === "01n") {
+    document.body.style.background = `linear-gradient(to top, #09203f 0%, #537895 100%)`;
+    containor.style.background = `#537895`;
+    mainContainer.style.background = `#537895`;
+    search.style.background = `#537895`;
+    //few clouds
+  } else if (icon === "02d") {
+    document.body.style.background = `linear-gradient(to top, #ACCBEE 0%, #E7F0FD 100%)`;
+    ontainor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "02n") {
+    document.body.style.background = `linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)`;
+    containor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+    search.style.background = `#4A4D67`;
+    //scattered clouds
+  } else if (icon === "03d") {
+    document.body.style.background = `linear-gradient(to top, #ACCBEE 0%, #E7F0FD 100%)`;
+    containor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "03n") {
+    document.body.style.background = `linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)`;
+    containor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+    search.style.background = `#4A4D67`;
+    //broken clouds
+  } else if (icon === "04d") {
+    document.body.style.background = `linear-gradient(to top, #CFD9DF 0%, #E2EBF0 100%)`;
+    containor.style.background = `#cfd9df`;
+    mainContainer.style.background = `#cfd9df`;
+    search.style.background = `#cfd9df`;
+  } else if (icon === "04n") {
+    document.body.style.background = `linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%)`;
+    containor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+    search.style.background = `#4A4D67`;
+    //shower rain
+  } else if (icon === "09d") {
+    document.body.style.background = `linear-gradient(to top, #CFD9DF 0%, #E2EBF0 100%)`;
+    containor.style.background = `#cfd9df`;
+    mainContainer.style.background = `#cfd9df`;
+    search.style.background = `#cfd9df`;
+  } else if (icon === "09n") {
+    document.body.style.background = `linear-gradient(#00D4FF, #CFED00)`;
+    containor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+    search.style.background = `#4A4D67`;
+    //rain
+  } else if (icon === "10d") {
+    document.body.style.background = `linear-gradient(to top, #ACCBEE 0%, #E7F0FD 100%)`;
+    containor.style.background = `#accbee`;
+    mainContainer.style.background = `#accbee`;
+    search.style.background = `#accbee`;
+  } else if (icon === "10n") {
+    document.body.style.background = `linear-gradient(#00D4FF, #CFED00)`;
+    containor.style.background = `#4A4D67`;
+    mainContainer.style.background = `#4A4D67`;
+    search.style.background = `#4A4D67`;
+    //thunderstorm
+  } else if (icon === "11d") {
+    document.body.style.background = `linear-gradient(305deg, rgb(135, 168, 254) 0%, rgb(254, 165, 197) 97%)`;
+    containor.style.background = `#afa7eb`;
+    mainContainer.style.background = `#afa7eb`;
+    search.style.background = `#afa7eb`;
+  } else if (icon === "11n") {
+    document.body.style.background = `linear-gradient(330deg, rgb(41, 125, 182) 0%, rgb(103, 55, 115) 99%)`;
+    containor.style.background = `#4f538d`;
+    mainContainer.style.background = `#4f538d`;
+    search.style.background = `#4f538d`;
+    //snow
+  } else if (icon === "13d") {
+    document.body.style.background = `linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%)`;
+    containor.style.background = `#CCE4F7`;
+    mainContainer.style.background = `#CCE4F7`;
+    search.style.background = `#CCE4F7`;
+  } else if (icon === "13n") {
+    document.body.style.background = `radial-gradient(circle at 10% 20%, rgb(0, 107, 141) 0%, rgb(0, 69, 91) 90%)`;
+    containor.style.background = `#006B8D`;
+    mainContainer.style.background = `#006B8D`;
+    search.style.background = `#006B8D`;
+    //mist
+  } else if (icon === "50d") {
+    document.body.style.background = `linear-gradient(to top, #C4C5C7 0%, #DCDDDF 52%, #EBEBEB 100%)`;
+    containor.style.background = `#c4c5c7`;
+    mainContainer.style.background = `#c4c5c7`;
+    search.style.background = `#c4c5c7`;
+  } else if (icon === "50n") {
+    document.body.style.background = `linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%)`;
+    containor.style.background = `#DDDDDD`;
+    mainContainer.style.background = `#DDDDDD`;
+    search.style.background = `#DDDDDD`;
+  }
+}
 
 // Default city search
 let form = document.querySelector("#city-seach-form");
