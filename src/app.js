@@ -247,7 +247,7 @@ function backgroundChange(response) {
     //few clouds
   } else if (icon === "02d") {
     document.body.style.background = `linear-gradient(to top, #ACCBEE 0%, #E7F0FD 100%)`;
-    ontainor.style.background = `#accbee`;
+    containor.style.background = `#accbee`;
     mainContainer.style.background = `#accbee`;
     search.style.background = `#accbee`;
   } else if (icon === "02n") {
@@ -290,12 +290,12 @@ function backgroundChange(response) {
     search.style.background = `#4A4D67`;
     //rain
   } else if (icon === "10d") {
-    document.body.style.background = `linear-gradient(to top, #ACCBEE 0%, #E7F0FD 100%)`;
+    document.body.style.background = `linear-gradient(89.4deg, rgb(74, 77, 103) -4.3%, rgb(119, 125, 165) 102.1%)`;
     containor.style.background = `#accbee`;
     mainContainer.style.background = `#accbee`;
     search.style.background = `#accbee`;
   } else if (icon === "10n") {
-    document.body.style.background = `linear-gradient(#00D4FF, #CFED00)`;
+    document.body.style.background = `linear-gradient(89.4deg, rgb(74, 77, 103) -4.3%, rgb(119, 125, 165) 102.1%)`;
     containor.style.background = `#4A4D67`;
     mainContainer.style.background = `#4A4D67`;
     search.style.background = `#4A4D67`;
