@@ -191,3 +191,71 @@ input::placeholder {
   margin-top: 40px;
   padding: 0;
 }
+
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 10px;
+  }
+
+  ul {
+    font-size: 10px;
+  }
+
+  .main_container {
+    margin: 50px 30px;
+  }
+
+  .input_search {
+    width: 150px;
+  }
+
+  button.search {
+    padding: 5px 15px;
+    margin-left: 20px;
+  }
+
+  button.location {
+    padding: 5px 15px;
+    margin-left: 10px;
+  }
+
+  #description {
+    margin-bottom: 20px;
+  }
+
+  #icon_main_temp {
+    width: 90px;
+  }
+
+  .units {
+    top: -25px;
+  }
+
+  .temperature {
+    font-size: 50px;
+  }
+
+  #date {
+    margin-top: 5px;
+  }
+
+  #icon_forecast_temp {
+    width: 30px;
+  }
+
+  .weather-forecast-date {
+    font-size: 10px;
+  }
+
+  .weather-forecast-temperature-max {
+    font-size: 12px;
+  }
+
+  #icon_forecast_temp {
+    width: 30px;
+  }
+
+  p.gitLink {
+    margin-top: 15px;
+  }
+}
